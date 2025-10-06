@@ -86,4 +86,4 @@ def run_fpl_script(gw_comparison, force_update, manager_id):
 #   gw_comparison: the range of gameweeks you would like to see the elements with the highest predicted points for
 #   force_update: forcefully update the data now? (it ill automatically update after every fixture or 12 hours)
 #   manager_id: the id of the manager to suggest transfers for. If you don't know how to find this, read README.md
-run_fpl_script(gw_comparison=5, force_update=False, manager_id=5033475)
+run_fpl_script(gw_comparison=5, force_update=True, manager_id=5033475)

@@ -3,6 +3,7 @@ import requests
 import numpy as np
 
 from indv_stat_funcs import return_opponents_in_next_seven_gws, past_x_performances
+from os_funcs import make_directory
 
 # show all columns
 pd.set_option('display.width', 400)
@@ -49,6 +50,10 @@ def create_element_master(main_response, current_gameweek):
         element_team = element_master.team[element]
         # Connect to FPL API and return dfs for each element's fixtures and stats
         element_fixtures_df, element_stats_df = create_element_dfs(element_og_id)
+        if not os.path.isdir('csvs'):
+            make_directory('csvs')
+            make_directory('csvs/element_fixtures')
+            make_directory('csvs/element_history')
         element_fixtures_df.to_csv(f'csvs/element_fixtures/{element}_fix.csv', index=False)
         element_fixtures_df.to_csv(f'csvs/element_history/{element}_hist.csv', index=False)
         # Ensures df isn't empty, which can happen if a newly signed player has just been added to FPL
