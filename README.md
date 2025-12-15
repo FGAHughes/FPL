@@ -1,4 +1,4 @@
-This is a program that predicts fantasy football players (referred to in program as elements) points and recommends transfers each gameweek, tailored to your team.
+This is my first ever python project, initially created in 2023, but uploaded and updated in 2025. It is a program that predicts fantasy football players' (referred to in program as elements) points and recommends transfers each gameweek, tailored to your team.
 
 Required libraries: Requests, Numpy, Pandas
 
