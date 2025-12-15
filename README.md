@@ -1,6 +1,6 @@
-This is my first ever python project, initially created in 2023, but uploaded and updated in 2025. It is a program that predicts fantasy football players' (referred to in program as elements) points and recommends transfers each gameweek, tailored to your team.
+This is my first ever python project, initially created in 2023 before I had any formal programming experience/ training, hence why it is pretty terrible. I have made a few tweaks since so that it works for the current premier league season, but to any future employers, please evaluate this with regard to the context it was created in (i.e. a first project).
 
-Required libraries: Requests, Numpy, Pandas
+This is a program that predicts fantasy football players' (referred to in program as elements) points and recommends transfers each gameweek, tailored to your team.
 
 To use the program, open main.py and input the parameters into 'run_fpl_script'. The first parameter, 'gw_comparison' should be the number of gameweeks you would like the algorithm to predict the best players to bring in for. The second, 'force_update', should only be True or False, and this will depend on whether you want the algorithm to update its data at the point of running. The algorithm automatically updates every 12 hours or after each finished fixture. The final parameter is the managerID of the fpl manager that you want the function to suggest transfers for. You can find a managerID by logging into the FPL website, navigating to 'Points' and finding the ID in the url, like so 'fantasy.premierleague.com/entry/{The ID will be here}/event/gameweek'.
 
